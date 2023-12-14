@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "scripts": {
+    "year-2023": "npx tsc && node dist/aoc/year-2023",
+    "year-2023:day1": "npx tsc && node dist --path=day1.js",
+    "year-2023:day2": "npx tsc && node dist --path=day2.js",
+    "year-2023:day3": "npx tsc && node dist --path=day3.js",
+    "year-2023:day4": "npx tsc && node dist --path=day4.js",
+    "year-2023:day5": "npx tsc && node dist --path=day5.js",
+    "year-2023:day6": "npx tsc && node dist --path=day6.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "typescript": "5.3.2"
+  },
+  "private": true,
+  "workspaces": [
+    "aoc/*"
+  ],
+  "dependencies": {
+    "@cent/aoc-runner": "github:centavosx/aoc-runner"
+  }
+}
